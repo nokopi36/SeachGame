@@ -18,6 +18,7 @@ public class SearchGame extends AppCompatActivity {
     private Sensor s1;
 
     private TextView tvAccX, tvAccY,tv1;
+    private Button btReturn1;
 
     private SampleView1 myView;
     private Locate circle;
@@ -35,6 +36,8 @@ public class SearchGame extends AppCompatActivity {
         tvAccY = (TextView)findViewById(R.id.tvAccY);
         myView=(SampleView1)findViewById(R.id.view1);
         circle=(Locate)findViewById(R.id.view2);
+        btReturn1 = (Button)findViewById(R.id.btReturn1);
+        btReturn1.setText("戻る");
 
         manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
@@ -72,6 +75,7 @@ public class SearchGame extends AppCompatActivity {
                     if (myView.result(xx, yy) == 1) {
                         result = 1;
                         tv1.setText("宝発見！！");
+                        btReturn1.setText("宝を確認する！");
                     } else {
                         result = -1;
                         tv1.setText("残念！そこにはないよ！！");
@@ -82,8 +86,6 @@ public class SearchGame extends AppCompatActivity {
             });
         }
 
-
-        Button btReturn1 = (Button)findViewById(R.id.btReturn1);
         btReturn1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 finish();

@@ -29,9 +29,9 @@ public class SampleView1 extends View{
             green=0;
             blue=0;
         }else {
-            red=255;
-            green=255;
-            blue=255;
+            red=0;
+            green=0;
+            blue=0;
         }
         this.invalidate();
     }

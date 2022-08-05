@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, SearchGame.class);
                 startActivityForResult(i, 1);
-                startFo
             }
         });
     }
