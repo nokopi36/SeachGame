@@ -3,13 +3,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 34
     buildToolsVersion "30.0.3"
+    namespace "com.nokopi.seachgame"
 
     defaultConfig {
         applicationId "com.nokopi.seachgame"
         minSdkVersion 24
-        targetSdkVersion 30
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
@@ -30,12 +31,12 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation "androidx.activity:activity-ktx:1.2.0"
-    implementation "androidx.fragment:fragment-ktx:1.3.0"
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.activity:activity-ktx:1.9.0"
+    implementation "androidx.fragment:fragment-ktx:1.8.1"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }
